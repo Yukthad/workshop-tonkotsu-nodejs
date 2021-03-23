@@ -11,6 +11,10 @@
     "test": "nyc mocha",
     "report-coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov"
   },
+  "scripts": {
+  "start": "node workshop-tonkotsu-nodejs/test/utils.test.js",
+  "build": "webpack" // This command will automatically run on deployment
+}
   "dependencies": {
     "chalk": "^2.4.2",
     "codecov": "^3.5.0",
